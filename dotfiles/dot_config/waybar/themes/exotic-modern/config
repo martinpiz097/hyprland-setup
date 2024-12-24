@@ -19,7 +19,7 @@
 
     // Load Modules
     "include": [
-        "~/.config/ml4w/settings/waybar-quicklinks.json",
+        //"~/.config/ml4w/settings/waybar-quicklinks.json",
         "~/.config/waybar/modules.json"
     ],
 
@@ -30,13 +30,13 @@
         "group/links",
 //"wlr/taskbar",
         "group/quicklinks",
+        "hyprland/window",
         "custom/empty"
     ],
 
     // Modules Center
     "modules-center": [
-"hyprland/window",
-        "custom/empty"
+        
     ],
 
     // Modules Right    

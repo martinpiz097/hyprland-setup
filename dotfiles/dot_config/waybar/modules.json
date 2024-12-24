@@ -50,6 +50,11 @@
       "(.*) - Outlook": "$1",
       "(.*) Microsoft Teams": "$1"
     },
+    "max-length": 100,
+    "icon": true,
+    "icon-size": 24,
+    "format": "{class}",
+    "on-click": "dunstify \"$(hyprctl activewindow -j | jq -r .class)\"",
     "separate-outputs": true
   },
 
@@ -220,26 +225,26 @@
 
   // CPU
   "cpu": {
-    "format": "/ C {usage}% ",
+    "format": "/ CPU {usage}% ",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   // Memory
   "memory": {
-    "format": "/ M {}% ",
+    "format": "/ Mem {}% ",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   // Harddisc space used
   "disk": {
     "interval": 30,
-    "format": "D {percentage_used}% ",
+    "format": "Disk {percentage_used}% ",
     "path": "/",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   "hyprland/language": {
-    "format": "/ K {short}"
+    "format": "/ Kb {short}"
   },
 
   // Group Hardware
@@ -269,14 +274,14 @@
     ]
   },
 
-  // Group Links
-  "group/links": {
-    "orientation": "horizontal",
-    "modules": [
-//      "custom/chatgpt",
-      "custom/empty"      
-    ]
-  },
+//   // Group Links
+//   "group/links": {
+//     "orientation": "horizontal",
+//     "modules": [
+// //      "custom/chatgpt",
+//       "custom/empty"      
+//     ]
+//   },
 
   // Group Settings
   "group/settings": {
