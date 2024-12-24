@@ -12,3 +12,8 @@ cuando maximizo una ventana o salgo del maximizado, las otras ventanas del works
 asegurar compilacion de hyprland-git a nativo
 
 compartir on pull request setup de monitors
+
+hyprshade por horario
+sddm
+waybar
+wallpaper
