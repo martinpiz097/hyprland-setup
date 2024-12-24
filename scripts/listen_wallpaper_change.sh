@@ -15,11 +15,11 @@ inotifywait -m -e modify "$CONFIG_FILE" | while read -r path event file; do
 
     if [[ "$CURRENT_WALLPAPER" != "$LAST_WALLPAPER" ]]; then
         LAST_WALLPAPER=$CURRENT_WALLPAPER
-        echo "El wallpaper ha cambiado: $CURRENT_WALLPAPER - $LAST_WALLPAPER"
-        #set-wallpaper "$CURRENT_WALLPAPER"
+        echo "El wallpaper ha cambiado: $CURRENT_WALLPAPER"
         rm $CURRENT_WALLPAPER_PATH || true
         touch $CURRENT_WALLPAPER_PATH || true
         echo "$LAST_WALLPAPER" >> $CURRENT_WALLPAPER_PATH
+        sed -i "s|~|$HOME|g" "$CURRENT_WALLPAPER_PATH"
     fi
-
+    sleep 0.01
 done
