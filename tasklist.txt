@@ -1,0 +1,6 @@
+recordatorio: dejar con permiso de ejecucion todos los .sh
+
+chmod recursivo
+decoracion special workspace
+waybar repetido
+dotfiles extras
