@@ -10,3 +10,5 @@ wallpapers nuevos
 waybar escondida en un workspace especifico con un keybinding
 cuando maximizo una ventana o salgo del maximizado, las otras ventanas del workspace deben heredar el estado
 asegurar compilacion de hyprland-git a nativo
+
+compartir on pull request setup de monitors
