@@ -110,5 +110,9 @@
     {
         "key": "decoration:dim_around",
         "value": 0.4
+    },
+    {
+        "key": "decoration:blur:popups_ignorealpha",
+        "value": 0.2
     }
 ]
