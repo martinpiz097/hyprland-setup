@@ -1,11 +1,11 @@
 [
     {
         "key": "general:gaps_in",
-        "value": 5
+        "value": 10
     },
     {
         "key": "general:gaps_out",
-        "value": 0
+        "value": 10
     },
     {
         "key": "general:extend_border_grab_area",
@@ -61,23 +61,23 @@
     },
     {
         "key": "decoration:rounding",
-        "value": 15
+        "value": 10
     },
     {
         "key": "decoration:dim_strength",
-        "value": 0.5
+        "value": 0.1
     },
     {
         "key": "decoration:dim_special",
-        "value": 0.2
+        "value": 0.1
     },
     {
         "key": "decoration:blur:brightness",
-        "value": 1.0
+        "value": 0.6
     },
     {
         "key": "decoration:blur:size",
-        "value": 6
+        "value": 10
     },
     {
         "key": "decoration:blur:passes",
@@ -89,6 +89,26 @@
     },
     {
         "key": "decoration:blur:popups",
-        "value": false
+        "value": true
+    },
+    {
+        "key": "decoration:blur:noise",
+        "value": 0.1
+    },
+    {
+        "key": "decoration:blur:contrast",
+        "value": 0.8
+    },
+    {
+        "key": "decoration:blur:vibrancy_darkness",
+        "value": 0.1
+    },
+    {
+        "key": "decoration:shadow:enabled",
+        "value": true
+    },
+    {
+        "key": "decoration:dim_around",
+        "value": 0.4
     }
 ]
