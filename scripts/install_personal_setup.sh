@@ -7,9 +7,14 @@
 # -------------------------------------------------------------------------------------------------------------------------------------------
 
 ROOT_FOLDER=~/hyprland-setup/scripts/install-personal-setup
+SET_WALLPAPER_SCRIPT=~/hyprland-setup/scripts/set-wallpaper.sh
 
 sh $ROOT_FOLDER/clear_current_setup.sh
 sh $ROOT_FOLDER/load_personal_setup.sh
 sh $ROOT_FOLDER/reload_ui.sh
+
+sudo rm /usr/bin/set-wallpaper || true
+sudo cp $SET_WALLPAPER_SCRIPT /usr/bin/set-wallpaper
+sudo chmod 777 /usr/bin/set-wallpaper
 
 echo "Setup finalizado!"
