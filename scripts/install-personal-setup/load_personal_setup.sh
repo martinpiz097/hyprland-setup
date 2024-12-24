@@ -6,10 +6,10 @@
 # $0 -> referencia al nombre del archivo actual, parámetro por defecto
 # -------------------------------------------------------------------------------------------------------------------------------------------
 
-PERSONAL_SETUP_PATH=~/hyprland-setup
+PERSONAL_SETUP_PATH=$HOME/hyprland-setup
 PERSONAL_DOTFILES_PATH=$PERSONAL_SETUP_PATH/dotfiles
-CONFIG_PATH=~/.config
-ML4W_DOTFILES_PATH=~/dotfiles
+CONFIG_PATH=$HOME/.config
+ML4W_DOTFILES_PATH=$HOME/dotfiles
 
 echo "Cargando setup personalizado..."
 
@@ -68,7 +68,7 @@ declare -A files_to_link=(
     [".Xresources"]=".Xresources"
     [".zshrc"]=".zshrc,.zshrc.pre-oh-my-zsh"
 )
-define_symlinks files_to_link "$ML4W_DOTFILES_PATH" "~"
+define_symlinks files_to_link "$ML4W_DOTFILES_PATH" "$HOME"
 
 if [ -d "$ML4W_DOTFILES_PATH/.config" ]; then
     for folder in "$ML4W_DOTFILES_PATH/.config"/*; do

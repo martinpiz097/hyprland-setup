@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Variables
-PERSONAL_SETUP_PATH=~/hyprland-setup
+PERSONAL_SETUP_PATH=$HOME/hyprland-setup
 PERSONAL_DOTFILES_PATH=$PERSONAL_SETUP_PATH/dotfiles
-CONFIG_PATH=~/.config
-ML4W_DOTFILES_PATH=~/dotfiles
+CONFIG_PATH=$HOME/.config
+ML4W_DOTFILES_PATH=$HOME/dotfiles
 
 remove_symlink_if_linked_from() {
     local target_path=$1
@@ -20,7 +20,7 @@ remove_symlink_if_linked_from() {
 }
 
 remove_symlinks() {
-    declare -a targets=(${!1})
+    local -n targets=$1
     local source_base=$2
 
     for target in "${targets[@]}"; do
@@ -29,24 +29,24 @@ remove_symlinks() {
 }
 
 if [ -d "$CONFIG_PATH" ]; then
-    config_targets=("")
+    config_targets=()
     for item in "$CONFIG_PATH"/*; do
         config_targets+=("$item")
     done
-    remove_symlinks config_targets[@] "$ML4W_DOTFILES_PATH/.config"
-    remove_symlinks "$CONFIG_PATH/ml4w-hyprland-settings" "$ML4W_DOTFILES_PATH"
+    remove_symlinks config_targets "$ML4W_DOTFILES_PATH/.config"
+    remove_symlink_if_linked_from "$CONFIG_PATH/ml4w-hyprland-settings" "$ML4W_DOTFILES_PATH"
 else
     echo "$CONFIG_PATH does not exist. Skipping."
 fi
 
 files_to_remove=(
-    ~/.bashrc
-    ~/.gtkrc-2.0
-    ~/.Xresources
-    ~/.zshrc
-    ~/.zshrc.pre-oh-my-zsh
+    "$HOME/.bashrc"
+    "$HOME/.gtkrc-2.0"
+    "$HOME/.Xresources"
+    "$HOME/.zshrc"
+    "$HOME/.zshrc.pre-oh-my-zsh"
 )
-remove_symlinks files_to_remove[@] ""
+remove_symlinks files_to_remove ""
 
 rm -r $ML4W_DOTFILES_PATH
 mkdir $ML4W_DOTFILES_PATH
