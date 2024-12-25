@@ -6,9 +6,16 @@
 # $0 -> referencia al nombre del archivo actual, parametro por defecto
 # -------------------------------------------------------------------------------------------------------------------------------------------
 
-ROOT_FOLDER=~/hyprland-setup/scripts/personal-setup-scripts
-SET_WALLPAPER_SCRIPT=~/hyprland-setup/scripts/set-wallpaper.sh
+REPO_FOLDER=$HOME/hyprland-setup/
+ROOT_FOLDER=$REPO_FOLDER/scripts/personal-setup-scripts
+#SET_WALLPAPER_SCRIPT=$REPO_FOLDER/scripts/set-wallpaper.sh
+WALLPAPERS_PATH=$REPO_FOLDER/wallpapers
 
+if ! [ -d $WALLPAPERS_PATH ]; then
+	cd $REPO_FOLDER
+	git clone https://github.com/martinpiz097/hyprland-wallpapers wallpapers
+fi
+	
 sh $ROOT_FOLDER/clear_current_setup.sh
 sh $ROOT_FOLDER/load_personal_setup.sh
 sh $ROOT_FOLDER/reload_ui.sh
