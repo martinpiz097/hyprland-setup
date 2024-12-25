@@ -1,19 +1,15 @@
 recordatorio: dejar con permiso de ejecucion todos los .sh
-
 chmod recursivo
-decoracion special workspace
-waybar repetido
-dotfiles extras
 
-barra menu con blur
-wallpapers nuevos
 waybar escondida en un workspace especifico con un keybinding
 cuando maximizo una ventana o salgo del maximizado, las otras ventanas del workspace deben heredar el estado
 asegurar compilacion de hyprland-git a nativo
 
-compartir on pull request setup de monitors
-
 hyprshade por horario
 sddm
-waybar
-wallpaper
+
+maximizado de todas las ventanas
+crear tags para tipos de ventanas
+paquetes pacman compilados local
+
+javalin
