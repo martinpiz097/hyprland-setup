@@ -12,4 +12,6 @@ maximizado de todas las ventanas
 crear tags para tipos de ventanas
 paquetes pacman compilados local
 
+fondo de pantalla dinamico por horario
+
 javalin
