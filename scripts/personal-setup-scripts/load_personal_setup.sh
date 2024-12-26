@@ -48,25 +48,27 @@ define_symlinks() {
 }
 
 declare -A symlinks_to_create=(
-    ["dot_bashrc"]=".bashrc"
-    ["dot_config"]=".config"
-    ["dot_gtkrc-2.0"]=".gtkrc-2.0"
-    ["dot_Xresources"]=".Xresources"
-    ["dot_zshrc"]=".zshrc"
+    [".bashrc"]=".bashrc"
+    [".config"]=".config"
+    [".gtkrc-2.0"]=".gtkrc-2.0"
+    [".Xresources"]=".Xresources"
+    [".zshrc"]=".zshrc"
     ["ml4w-hyprland-settings"]="ml4w-hyprland-settings"
 )
 define_symlinks symlinks_to_create "$PERSONAL_DOTFILES_PATH" "$ML4W_DOTFILES_PATH"
+
 
 declare -A symlinks_to_create=(
     ["ml4w-hyprland-settings"]="ml4w-hyprland-settings"
 )
 define_symlinks symlinks_to_create "$ML4W_DOTFILES_PATH" "$CONFIG_PATH"
 
+
 declare -A files_to_link=(
     [".bashrc"]=".bashrc"
     [".gtkrc-2.0"]=".gtkrc-2.0"
     [".Xresources"]=".Xresources"
-    [".zshrc"]=".zshrc,.zshrc.pre-oh-my-zsh"
+    [".zshrc"]=".zshrc"
 )
 define_symlinks files_to_link "$ML4W_DOTFILES_PATH" "$HOME"
 

@@ -14,7 +14,7 @@ remove_symlink_if_linked_from() {
         local linked_path=$(readlink "$target_path")
         if [[ "$linked_path" == "$source_base_path"* ]]; then
             echo "Removing symlink: $target_path (linked from $linked_path)"
-            rm -rf "$target_path"
+            unlink "$target_path"
         fi
     fi
 }
@@ -44,7 +44,6 @@ files_to_remove=(
     "$HOME/.gtkrc-2.0"
     "$HOME/.Xresources"
     "$HOME/.zshrc"
-    "$HOME/.zshrc.pre-oh-my-zsh"
 )
 remove_symlinks files_to_remove ""
 
