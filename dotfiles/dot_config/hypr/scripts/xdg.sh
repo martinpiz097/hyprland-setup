@@ -54,4 +54,4 @@ systemctl --user start xdg-desktop-portal-hyprland
 
 # Run waybar
 sleep $_sleep1
-~/.config/waybar/launch.sh 
+~/.config/waybar/launch.sh
