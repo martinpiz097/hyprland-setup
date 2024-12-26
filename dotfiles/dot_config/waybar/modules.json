@@ -20,7 +20,7 @@
       "default": ""
     },
     "persistent-workspaces": {
-            "*": 4
+      "*": 4
     }
   },
 
@@ -86,7 +86,7 @@
     "tooltip-format": "Left: Open clipboard Manager\nRight: Delete an entry\nMiddle: Clear list"
   },
 
-  // // Updates Count
+  // Updates Count
   // "custom/updates": {
   //   "format": "  {}",
   //   "escape": true,
@@ -169,7 +169,8 @@
   "custom/exit": {
     "format": "",
     "on-click": "~/.config/ml4w/scripts/wlogout.sh",
-    "tooltip-format": "Power Menu"
+    "on-click-right": "hyprlock",
+    "tooltip-format": "Left: Power menu\nRight: Lock screen"
   },
 
   // Hyprshade
@@ -188,8 +189,7 @@
     "exec-on-event": true,
     "interval": 60,
     "exec": "~/.config/hypr/scripts/hypridle.sh status",
-    "on-click": "~/.config/hypr/scripts/hypridle.sh toggle",
-    "on-click-right": "hyprlock"
+    "on-click": "~/.config/hypr/scripts/hypridle.sh toggle"
   },
 
   // Keyboard State
@@ -211,7 +211,7 @@
 
   // Clock
   "clock": {
-        "format": "{:%Od/%Om/%Y - %H:%M}",
+    "format": "{:%Od/%Om/%Y - %H:%M}",
     "on-click": "ags toggle calendar",
     "timezone": "",
     "tooltip": false
@@ -274,14 +274,14 @@
     ]
   },
 
-//   // Group Links
-//   "group/links": {
-//     "orientation": "horizontal",
-//     "modules": [
-// //      "custom/chatgpt",
-//       "custom/empty"      
-//     ]
-//   },
+  // Group Links
+  // "group/links": {
+  //   "orientation": "horizontal",
+  //   "modules": [
+  //     "custom/chatgpt",
+  //     "custom/empty"      
+  //   ]
+  // },
 
   // Group Settings
   "group/settings": {
