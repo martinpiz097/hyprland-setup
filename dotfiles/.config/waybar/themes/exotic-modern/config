@@ -7,14 +7,14 @@
 //  
 // by Stephan Raabe (2023) 
 // ----------------------------------------------------- 
-//
+
 {
     // General Settings
     "layer": "top",
     "margin-top": 14,
     "margin-bottom": 5,
     "margin-left": 14,
-    "margin-right": 14,    
+    "margin-right": 14,
     "spacing": 0,
 
     // Load Modules
@@ -25,33 +25,32 @@
 
     // Modules Left
     "modules-left": [
-"custom/appmenu",
+        "custom/appmenu",
         "hyprland/workspaces",
-        "group/links",
-//"wlr/taskbar",
-        "group/quicklinks",
-        "hyprland/window",
-        "custom/empty"
+        "hyprland/window"
+        //"group/links",
+        //"wlr/taskbar",
+        //"group/quicklinks",
+        //"custom/empty"
     ],
 
     // Modules Center
-    "modules-center": [
-        
-    ],
+    "modules-center": [],
 
-    // Modules Right    
+    // Modules Right
     "modules-right": [
         "custom/updates",
         "pulseaudio",
-//"backlight",
+        //"backlight",
         "bluetooth",
-        "battery", 
-"network",
+        "battery",
+        "network",
         "group/hardware",
         "group/tools",
-"tray",
+        "tray",
         "custom/exit",
         "custom/ml4w-welcome",
         "clock"
     ]
 }
+

@@ -1,5 +1,6 @@
 #!/bin/bash
 
+SCRIPT_PARENT_FOLDER=$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)
 CURRENT_WALLPAPER_PATH=$HOME/.config/ml4w/cache/current_wallpaper
 CONFIG_FILE=$HOME/.config/waypaper/config.ini
 LAST_WALLPAPER=$1
@@ -19,4 +20,8 @@ echo "$LAST_WALLPAPER" >> $CURRENT_WALLPAPER_PATH
 sed -i "s|~|$HOME|g" "$CURRENT_WALLPAPER_PATH"
 
 echo "Modificando color scheme..."
-wal -i $(cat $CURRENT_WALLPAPER_PATH)
+wal -q -i $(cat $CURRENT_WALLPAPER_PATH)
+source "$HOME/.cache/wal/colors.sh"
+
+echo "Cargando blur wallpaper..."
+sh $SCRIPT_PARENT_FOLDER/generate_blur_wallpaper.sh
