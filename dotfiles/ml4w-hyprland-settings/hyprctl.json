@@ -1,11 +1,11 @@
 [
     {
         "key": "general:gaps_in",
-        "value": 15
+        "value": 20
     },
     {
         "key": "general:gaps_out",
-        "value": 30
+        "value": 35
     },
     {
         "key": "general:extend_border_grab_area",
