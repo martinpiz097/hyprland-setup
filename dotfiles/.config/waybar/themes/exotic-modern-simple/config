@@ -36,23 +36,22 @@
 
     // Modules Center
     "modules-center": [
-    	
     ],
 
     // Modules Right
     "modules-right": [
-        "custom/updates",
+        //"custom/updates",
+        "network",
         "pulseaudio",
         //"backlight",
         "bluetooth",
         "battery",
-        "network",
         "group/hardware",
         "group/tools",
         "tray",
-        "custom/exit",
         "custom/ml4w-welcome",    
-        "clock"
+        "clock",    	
+        "custom/exit"
     ]
 }
 

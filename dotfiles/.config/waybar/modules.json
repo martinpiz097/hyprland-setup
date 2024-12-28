@@ -13,7 +13,7 @@
     "on-click": "activate",
     "active-only": true,
     "all-outputs": true,
-    "format": "{}",
+    "format": "Workspace [{}]",
     "format-icons": {
       "urgent": "",
       "active": "",

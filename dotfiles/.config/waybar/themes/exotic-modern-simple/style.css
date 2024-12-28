@@ -25,7 +25,9 @@
 }
 
 window#waybar {
-    background-color: transparent;
+    /*background-color: transparent;*/
+    background-color: black;
+
     border-bottom: 0px solid #ffffff;
     /* color: #FFFFFF; */
     transition-property: background-color;
@@ -38,8 +40,6 @@ window#waybar {
 
 #workspaces {
     background: @workspacesbackground1;
-    margin: 2px 18px 3px 1px;
-    padding: 0px 2px;
     border-radius: 5px 5px 5px 5px;
     border: 0px;
     font-weight: bold;
@@ -47,22 +47,21 @@ window#waybar {
     opacity: 0.8;
     font-size: 16px;
     color: @textcolor1;
+    margin: 0px 15px 0px 0px;
 }
 
 #workspaces button {
-    padding: 0px 6px;
-    margin: 3px 2px;
     border-radius: 3px 3px 3px 3px;
     border: 0px;
     color: @textcolor1;
-    background-color: @workspacesbackground2;
+    /*background-color: @workspacesbackground2;*/
     transition: all 0.1s linear;
     opacity: 0.4;
 }
 
 #workspaces button.active {
     color: @textcolor1;
-    background: @workspacesbackground2;
+    /*background: @workspacesbackground2;*/
     border-radius: 3px 3px 3px 3px;
     min-width: 30px;
     transition: all 0.1s linear;
@@ -84,8 +83,6 @@ tooltip {
     border-radius: 16px;
     background-color: @backgroundlight;
     opacity:0.9;
-    padding:20px;
-    margin:0px;
 }
 
 tooltip label {
@@ -97,10 +94,8 @@ tooltip label {
  * ----------------------------------------------------- */
 
 #window {
-    margin: 0px 0px 0px 0px;
-    padding: 2px 10px 0px 0px;
     border-radius: 5px 5px 5px 5px;
-    color: white;
+    color: @textcolor1;
     font-size:16px;
     font-weight:normal;
     opacity:0.8;
@@ -117,8 +112,6 @@ window#waybar.empty #window {
 
 #taskbar {
     background: @backgroundlight;
-    margin: 3px 15px 3px 0px;
-    padding:0px;
     border-radius: 5px 5px 5px 5px;
     font-weight: normal;
     font-style: normal;
@@ -127,16 +120,12 @@ window#waybar.empty #window {
 }
 
 #taskbar button {
-    margin:0;
     border-radius: 5px 5px 5px 5px;
-    padding: 0px 5px 0px 5px;
 }
 
 #taskbar.empty {
     background:transparent;
     border:0;
-    padding:0;
-    margin:0;
 }
 
 /* -----------------------------------------------------
@@ -199,11 +188,9 @@ window#waybar.empty #window {
 #custom-quicklink8,
 #custom-quicklink9,
 #custom-quicklink10 {
-    margin-right: 24px;   
 }
 
 #custom-tools {
-    margin-right:12px;
 }
 
 #custom-hypridle.active {
@@ -215,21 +202,20 @@ window#waybar.empty #window {
 }
 
 #custom-ml4w-welcome {
-    margin-right: 12px;
-    background-image: url("../assets/ml4w-icon.svg");
+	margin-right: 12px;
+    background-image: url("../assets/ml4w-icon.svg"), linear-gradient(to right, #6DB3F2, #6DB3F2);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain; 
+    background-size: contain;
+    /* background-color: @iconcolor; */
     padding-right: 20px;
 }
 
 #custom-chatgpt {
-    margin-right: 16px;
     background-image: url("../assets/openai.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain; 
-    padding-right: 18px;
     opacity: 0.8;
 }
 
@@ -263,7 +249,7 @@ window#waybar.empty #window {
     color: @textcolor1;
     border-radius: 5px 5px 5px 5px;
     padding: 0px 10px 0px 10px;
-    margin: 2px 17px 2px 0px;
+    margin: 2px 10px 2px 10px;
     opacity:0.8;
     border:3px solid @bordercolor;
 }
@@ -289,8 +275,6 @@ window#waybar.empty #window {
     font-size: 16px;
     color: @textcolor2;
     border-radius: 5px 5px 5px 5px;
-    padding: 2px 10px 0px 10px;
-    margin: 3px 15px 3px 0px;
     opacity:0.8;
 }
 
@@ -332,8 +316,7 @@ window#waybar.empty #window {
     font-size: 16px;
     color: @textcolor1;
     border-radius: 3px 5px 3px 5px;
-    padding: 1px 10px 0px 10px;
-    margin: 3px 0px 3px 0px;
+    margin: 0px 25px 0px 0px;
     opacity:0.8;
     border:3px solid @bordercolor;   
 }
@@ -347,8 +330,9 @@ window#waybar.empty #window {
     font-size: 16px;
     color: @textcolor2;
     border-radius: 5px 5px 5px 5px;
-    padding: 2px 10px 0px 10px;
-    margin: 3px 15px 3px 0px;
+    /* padding: 2px 10px 0px 10px;
+    margin: 3px 15px 3px 0px; */
+    margin: 0px 25px 0px 0px;
     opacity:0.8;
 }
 
@@ -361,8 +345,9 @@ window#waybar.empty #window {
     font-size: 16px;
     color: @textcolor2;
     border-radius: 5px 5px 5px 5px;
-    padding: 2px 10px 0px 10px;
-    margin: 3px 15px 3px 0px;
+    /* padding: 2px 10px 0px 10px;
+    margin: 3px 15px 3px 0px; */
+    margin: 0px 25px 0px 0px;
     opacity:0.8;
 }
 
@@ -380,8 +365,9 @@ window#waybar.empty #window {
     font-size: 16px;
     color: @textcolor2;
     border-radius: 5px 5px 5px 5px;
-    padding: 2px 10px 0px 10px;
-    margin: 3px 15px 3px 0px;
+	/* padding: 2px 10px 0px 10px;
+    margin: 3px 10px 3px 0px; */
+    margin: 0px 25px 0px 0px;
     opacity:0.8;
 }
 
@@ -424,8 +410,8 @@ window#waybar.empty #window {
     font-size: 16px;
     color: @textcolor2;
     border-radius: 5px 5px 5px 5px;
-    padding: 2px 15px 0px 10px;
-    margin: 3px 15px 3px 0px;
+    /* padding: 2px 15px 0px 10px; */
+    margin: 0px 25px 0px 0px;
     opacity:0.8;
 }
 
