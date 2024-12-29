@@ -3,21 +3,12 @@
  * ----------------------------------------------------- */
  @import '../../../../../.cache/wal/colors-waybar.css';
 
- @define-color backgroundlight #000000;
- @define-color backgrounddark #000000;
- @define-color workspacesbackground1 #000000;
- @define-color workspacesbackground2 #222222;
- @define-color bordercolor #000000;
- /* @define-color textcolor1 #FFFFFF; */
- /* @define-color textcolor2 #FFFFFF; */
- /* @define-color textcolor3 #FFFFFF; */
- /* @define-color iconcolor #FFFFFF; */
+ @define-color backgroundcolor #000000;
+ @define-color workspacesbackground @backgroundcolor;
+ @define-color bordercolor @backgroundcolor;
 
-/* @define-color textcolor1 #B6FFA1; */
-@define-color textcolor1 #84FF1D;
-@define-color textcolor2 @textcolor1;
-@define-color textcolor3 @textcolor1;
-@define-color iconcolor @textcolor1;
+@define-color textcolor #84FF1D;
+@define-color iconcolor @textcolor;
  
  @import '../style.css';
  
