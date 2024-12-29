@@ -10,7 +10,7 @@
 
 {
     // General Settings
-    "layer": "top",
+    "layer": "bottom",
     "margin-top": 0,
     "margin-bottom": 0,
     "margin-left": 0,
@@ -27,6 +27,7 @@
     "modules-left": [
         "custom/appmenu",
         "hyprland/workspaces",
+        "custom/spotify",
         "hyprland/window"
         //"group/links",
         //"wlr/taskbar",
@@ -46,9 +47,9 @@
         //"backlight",
         "bluetooth",
         "battery",
+        "tray",
         "group/hardware",
         "group/tools",
-        "tray",
         "custom/ml4w-welcome",    
         "clock",    	
         "custom/exit"

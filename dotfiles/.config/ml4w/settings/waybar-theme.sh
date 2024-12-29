@@ -1,1 +1,1 @@
-/exotic-modern-simple;/exotic-modern-simple/black
+/exotic-modern-simple;/exotic-modern-simple/white

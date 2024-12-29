@@ -13,7 +13,7 @@
     "on-click": "activate",
     "active-only": true,
     "all-outputs": true,
-    "format": "Workspace [{}]",
+    "format": "W [{}]",
     "format-icons": {
       "urgent": "",
       "active": "",
@@ -50,10 +50,10 @@
       "(.*) - Outlook": "$1",
       "(.*) Microsoft Teams": "$1"
     },
-    "max-length": 100,
+    "max-length": 50,
     "icon": true,
     "icon-size": 24,
-    "format": "{class}",
+    "format": "{title}",
     "on-click": "dunstify \"$(hyprctl activewindow -j | jq -r .class)\"",
     "separate-outputs": true
   },
@@ -150,7 +150,7 @@
   // Rofi Application Launcher
   "custom/appmenu": {
     // START APPS LABEL
-    "format": "Apps",
+    "format": "&#x2630;",
     // END APPS LABEL
     "on-click": "sleep 0.2;pkill rofi || rofi -show drun -replace",
     "on-click-right": "~/.config/hypr/scripts/keybindings.sh",
@@ -388,5 +388,16 @@
       ""
     ],
     "scroll-step": 1
-  }
+  },
+
+  "custom/spotify": {
+      "exec": "/usr/bin/python3 /home/martin/.config/waybar/custom-modules/mediaplayer/mediaplayer.py --player spotify",
+      "format": "{}  ",
+      //"max-length": 50,
+      "return-type": "json",
+      "on-click": "playerctl play-pause --player spotify",
+      "on-click-right": "pavucontrol-qt",
+      "on-scroll-up": "playerctl next",
+      "on-scroll-down": "playerctl previous"
+   }
 }

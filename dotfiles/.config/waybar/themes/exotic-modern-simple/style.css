@@ -46,7 +46,6 @@ window#waybar {
     opacity: 0.8;
     font-size: 16px;
     color: @textcolor;
-    margin: 0px 15px 0px 0px;
 }
 
 #workspaces button {
@@ -244,11 +243,11 @@ window#waybar.empty #window {
 
 #custom-appmenu {
     background-color: @backgroundcolor;
-    font-size: 16px;
+    font-size: 22px;
     color: @textcolor;
     border-radius: 5px 5px 5px 5px;
-    padding: 0px 10px 0px 10px;
-    margin: 2px 10px 2px 10px;
+    padding: 0px 0px 0px 0px;
+    margin: 2px 0px 2px 15px;
     opacity:0.8;
     border:3px solid @bordercolor;
 }
@@ -450,4 +449,11 @@ window#waybar.empty #window {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
+}
+
+.custom-spotify {
+    padding: 0px 20px 0px 10px;
+    background-color: @backgroundcolor;
+    font-size: 16px;
+    color: #1DB954;
 }
