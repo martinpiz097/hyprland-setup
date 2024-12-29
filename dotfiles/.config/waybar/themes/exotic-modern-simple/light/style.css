@@ -3,9 +3,9 @@
  * ----------------------------------------------------- */
  @import '../../../../../.cache/wal/colors-waybar.css';
 
- @define-color backgroundcolor #ffffff;
- @define-color workspacesbackground @backgroundcolor;
- @define-color bordercolor @backgroundcolor;
+@define-color backgroundcolor #ffffff;
+@define-color workspacesbackground @backgroundcolor;
+@define-color bordercolor @backgroundcolor;
 
 @define-color textcolor #000000;
 @define-color iconcolor @textcolor;
