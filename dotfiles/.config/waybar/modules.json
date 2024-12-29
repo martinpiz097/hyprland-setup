@@ -13,7 +13,7 @@
     "on-click": "activate",
     "active-only": true,
     "all-outputs": true,
-    "format": "W [{}]",
+    "format": "{}",
     "format-icons": {
       "urgent": "",
       "active": "",
@@ -50,7 +50,7 @@
       "(.*) - Outlook": "$1",
       "(.*) Microsoft Teams": "$1"
     },
-    "max-length": 50,
+    "max-length": 45,
     "icon": true,
     "icon-size": 24,
     "format": "{title}",
@@ -205,8 +205,8 @@
 
   // System tray
   "tray": {
-    "icon-size": 21,
-    "spacing": 10
+    "icon-size": 24,
+    "spacing": 8
   },
 
   // Clock
@@ -225,20 +225,20 @@
 
   // CPU
   "cpu": {
-    "format": "/ CPU {usage}% ",
+    "format": "CPU\n{usage}%",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   // Memory
   "memory": {
-    "format": "/ Mem {}% ",
+    "format": "Mem\n{}%",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   // Harddisc space used
   "disk": {
     "interval": 30,
-    "format": "Disk {percentage_used}% ",
+    "format": "Disk\n{percentage_used}%",
     "path": "/",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
@@ -269,7 +269,7 @@
     "modules": [
       "custom/tools",
       "custom/cliphist",
-      "custom/hypridle",
+      // "custom/hypridle",
       "custom/hyprshade"
     ]
   },
@@ -397,11 +397,16 @@
   "custom/spotify": {
       "exec": "/usr/bin/python3 /home/martin/.config/waybar/custom-modules/mediaplayer/mediaplayer.py --player spotify",
       "format": "{}  ",
-      //"max-length": 50,
+      "max-length": 55,
       "return-type": "json",
       "on-click": "playerctl play-pause --player spotify",
       "on-click-right": "pavucontrol-qt",
       "on-scroll-up": "playerctl next",
       "on-scroll-down": "playerctl previous"
-   }
+   },
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+  }
 }
