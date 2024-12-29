@@ -27,7 +27,6 @@
     "modules-left": [
         "custom/appmenu",
         "hyprland/workspaces",
-        "custom/spotify",
         "hyprland/window"
         //"group/links",
         //"wlr/taskbar",
@@ -37,20 +36,22 @@
 
     // Modules Center
     "modules-center": [
+        "custom/spotify"
     ],
 
     // Modules Right
     "modules-right": [
         //"custom/updates",
-        "network",
+        "group/hardware",
         "pulseaudio",
         //"backlight",
         "bluetooth",
         "battery",
         "tray",
-        "group/hardware",
+        "network",
         "group/tools",
-        "custom/ml4w-welcome",    
+        "custom/ml4w-welcome",
+        "hyprland/language",   
         "clock",    	
         "custom/exit"
     ]

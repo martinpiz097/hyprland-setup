@@ -244,7 +244,7 @@
   },
 
   "hyprland/language": {
-    "format": "/ Kb {short}"
+    "format": "{short}"
   },
 
   // Group Hardware
@@ -255,7 +255,7 @@
       "children-class": "not-memory",
       "transition-left-to-right": false
     },
-    "modules": ["custom/system", "disk", "cpu", "memory", "hyprland/language"]
+    "modules": ["custom/system", "disk", "cpu", "memory"]
   },
 
   // Group Tools
@@ -300,17 +300,17 @@
 
   // Network
   "network": {
-    "format": "{ifname}",
-    "format-wifi": " {essid} ({signalStrength}%)",
-    "format-ethernet": "  {ifname}",
-    "format-disconnected": "Disconnected ⚠",
+    "format": "⚠",
+    "format-wifi": "",
+    "format-ethernet": "",
+    "format-disconnected": "⚠",
     "tooltip-format": " {ifname} via {gwaddri}",
     "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
     "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
     "on-click": "~/.config/ml4w/settings/networkmanager.sh",
-    "on-click-right": "~/.config/ml4w/scripts/nm-applet.sh toggle",
+    "on-click-right": "~/.config/ml4w/scripts/nm-applet.sh toggle"
   },
 
   // Battery
@@ -320,10 +320,12 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon} {capacity}%",
-    "format-charging": "  {capacity}%",
-    "format-plugged": "  {capacity}%",
-    "format-alt": "{icon}  {time}",
+    "format": "{icon}",
+    "format-charging": "",
+    "format-plugged": "",
+    //"format-alt": "{icon}  {time}",
+    "tooltip": true,
+    "tooltip-format": "{capacity}%",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
     "format-icons": [" ", " ", " ", " ", " "]
@@ -332,11 +334,11 @@
   // Pulseaudio
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{icon}  {volume}%",
+    "format": "{icon}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
-    "format-source": "{volume}% ",
+    "format-muted": "",
+    "format-source": "",
     "format-source-muted": "",
     "format-icons": {
       "headphone": " ",
@@ -347,6 +349,8 @@
       "car": " ",
       "default": ["", "", ""]
     },
+    "tooltip": true,
+    "tooltip-format": "{volume}%",
     "on-click": "pavucontrol-qt"
   },
 

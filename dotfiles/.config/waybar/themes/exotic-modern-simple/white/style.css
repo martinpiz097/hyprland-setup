@@ -9,8 +9,11 @@
 
 @define-color textcolor #ffffff;
 @define-color iconcolor @textcolor;
- 
- @import '../style.css';
+
+@define-color spotifybackground #1DB954;
+@define-color spotifycolor @backgroundcolor;
+
+@import '../style.css';
  
 #custom-ml4w-welcome {
     background-image: url("../../assets/ml4w-icon-white.svg");

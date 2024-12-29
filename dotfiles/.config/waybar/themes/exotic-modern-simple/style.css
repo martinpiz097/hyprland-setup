@@ -169,7 +169,7 @@ window#waybar.empty #window {
 #custom-quicklink9,
 #custom-quicklink10,
 #custom-waybarthemes {
-    margin-right: 16px;
+    margin-right: 15px;
     font-size: 20px;
     font-weight: bold;
     opacity: 0.8;
@@ -186,9 +186,6 @@ window#waybar.empty #window {
 #custom-quicklink8,
 #custom-quicklink9,
 #custom-quicklink10 {
-}
-
-#custom-tools {
 }
 
 #custom-hypridle.active {
@@ -257,7 +254,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-exit {
-    margin: 0px 13px 0px 0px;
+    margin: 0px 15px 0px 0px;
     padding:0px;
     font-size:20px;
     color: @iconcolor;
@@ -294,15 +291,18 @@ window#waybar.empty #window {
  * Hardware Group
  * ----------------------------------------------------- */
 
-#disk,#memory,#cpu,#language {
-    margin:0px;
-    padding:0px;
+#disk,#memory,#cpu {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 5px;
     font-size:16px;
     color:@iconcolor;
 }
 
 #language {
-    margin-right:10px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 15px 0px 0px;
+    font-size:20px;
+    color:@iconcolor;
 }
 
 /* -----------------------------------------------------
@@ -314,8 +314,8 @@ window#waybar.empty #window {
     font-size: 16px;
     color: @textcolor;
     border-radius: 3px 5px 3px 5px;
-    margin: 0px 25px 0px 0px;
-    opacity:0.8;
+    margin: 0px 15px 0px 0px;
+    opacity: 1.0;
     border:3px solid @bordercolor;   
 }
 
@@ -345,7 +345,7 @@ window#waybar.empty #window {
     border-radius: 5px 5px 5px 5px;
     /* padding: 2px 10px 0px 10px;
     margin: 3px 15px 3px 0px; */
-    margin: 0px 25px 0px 0px;
+    margin: 0px 15px 0px 3px;
     opacity:0.8;
 }
 
@@ -409,7 +409,7 @@ window#waybar.empty #window {
     color: @textcolor;
     border-radius: 5px 5px 5px 5px;
     /* padding: 2px 15px 0px 10px; */
-    margin: 0px 25px 0px 0px;
+    margin: 0px 15px 0px 0px;
     opacity:0.8;
 }
 
@@ -452,8 +452,10 @@ window#waybar.empty #window {
 }
 
 .custom-spotify {
-    padding: 0px 20px 0px 10px;
-    background-color: @backgroundcolor;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    background-color: @spotifybackground;
     font-size: 16px;
-    color: #1DB954;
+    color: @spotifycolor;
+    opacity: 1.0;
 }
