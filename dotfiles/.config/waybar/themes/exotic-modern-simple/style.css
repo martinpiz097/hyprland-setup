@@ -20,7 +20,7 @@
 
 @define-color altbackgroundcolor @textcolor;
 @define-color altbordercolor @altbackgroundcolor;
-@define-color alttextcolor @waybarcolor;
+@define-color alttextcolor @backgroundcolor;
 @define-color alticoncolor @alttextcolor;
  
 

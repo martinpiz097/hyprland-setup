@@ -9,7 +9,7 @@
     },
     {
         "key": "general:extend_border_grab_area",
-        "value": 20
+        "value": 30
     },
     {
         "key": "general:allow_tearing",
@@ -65,7 +65,7 @@
     },
     {
         "key": "decoration:dim_strength",
-        "value": 0.1
+        "value": 1.0
     },
     {
         "key": "decoration:dim_special",
