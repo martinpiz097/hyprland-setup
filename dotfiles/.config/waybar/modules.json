@@ -395,7 +395,7 @@
   },
 
   "custom/spotify": {
-      "exec": "/usr/bin/python3 /home/martin/.config/waybar/custom-modules/mediaplayer/mediaplayer.py --player spotify",
+      "exec": "/usr/bin/python3 ~/.config/waybar/custom-modules/mediaplayer/mediaplayer.py --player spotify",
       "format": "{}  ",
       "max-length": 55,
       "return-type": "json",
