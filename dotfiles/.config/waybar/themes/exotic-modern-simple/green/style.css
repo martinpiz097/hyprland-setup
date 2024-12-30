@@ -3,15 +3,16 @@
  * ----------------------------------------------------- */
 @import '../../../../../.cache/wal/colors-waybar.css';
 
-@define-color backgroundcolor #1DB954;
-@define-color workspacesbackground @backgroundcolor;
-@define-color bordercolor @backgroundcolor;
+@define-color waybarcolor #1DB954;
 
-@define-color textcolor black;
+@define-color backgroundcolor @waybarcolor;
+@define-color bordercolor @waybarcolor;
+@define-color textcolor #000000;
 @define-color iconcolor @textcolor;
 
-@define-color spotifybackground @textcolor;
-@define-color spotifycolor @backgroundcolor;
+
+@define-color spotifybackground @altbackgroundcolor;
+@define-color spotifycolor @alttextcolor; 
 
 @import '../style.css';
  

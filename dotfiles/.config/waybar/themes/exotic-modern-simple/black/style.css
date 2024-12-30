@@ -1,17 +1,17 @@
 /* -----------------------------------------------------
  * Import Pywal colors 
  * ----------------------------------------------------- */
- @import '../../../../../.cache/wal/colors-waybar.css';
+@import '../../../../../.cache/wal/colors-waybar.css';
 
- @define-color backgroundcolor #000000;
- @define-color workspacesbackground @backgroundcolor;
- @define-color bordercolor @backgroundcolor;
+@define-color waybarcolor #000000;
 
+@define-color backgroundcolor @waybarcolor;
+@define-color bordercolor @waybarcolor;
 @define-color textcolor #ffffff;
 @define-color iconcolor @textcolor;
 
 @define-color spotifybackground #1DB954;
-@define-color spotifycolor @backgroundcolor;
+@define-color spotifycolor @alttextcolor;
 
 @import '../style.css';
  

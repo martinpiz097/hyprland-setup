@@ -1,19 +1,21 @@
 /* -----------------------------------------------------
  * Import Pywal colors 
  * ----------------------------------------------------- */
- @import '../../../../../.cache/wal/colors-waybar.css';
+@import '../../../../../.cache/wal/colors-waybar.css';
 
-@define-color backgroundcolor #ffffff;
-@define-color workspacesbackground @backgroundcolor;
-@define-color bordercolor @backgroundcolor;
+@define-color waybarcolor #ffffff;
 
+@define-color backgroundcolor @waybarcolor;
+@define-color bordercolor @waybarcolor;
 @define-color textcolor #000000;
 @define-color iconcolor @textcolor;
 
-@define-color spotifybackground #1DB954;
-@define-color spotifycolor @backgroundcolor;
 
- @import '../style.css';
+@define-color spotifybackground #1DB954;
+@define-color spotifycolor @waybarcolor;
+
+
+@import '../style.css';
  
 #custom-ml4w-welcome {
     background-image: url("../../assets/ml4w-icon-black.svg");
