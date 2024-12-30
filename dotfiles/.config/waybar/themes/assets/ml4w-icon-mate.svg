@@ -12,8 +12,8 @@
     <rect x="110" y="120" width="75" height="15" rx="4" ry="4" fill="black"/>
     <rect x="110" y="55" width="15" height="80" rx="4" ry="4" fill="black"/>
   </mask>
-
   <!-- Circle with cutouts -->
-  <circle fill="#1DB954" cx="120" cy="120" r="120" mask="url(#cutoutMask)" />
+
+  <circle fill="#87a556" cx="120" cy="120" r="120" mask="url(#cutoutMask)" />
 </svg>
 

@@ -1,1 +1,1 @@
-/exotic-modern-simple;/exotic-modern-simple/ubuntu-mate
+/exotic-modern-simple;/exotic-modern-simple/orange-player-light
