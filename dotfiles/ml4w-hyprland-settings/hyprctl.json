@@ -9,7 +9,7 @@
     },
     {
         "key": "general:extend_border_grab_area",
-        "value": 30
+        "value": 15
     },
     {
         "key": "general:allow_tearing",

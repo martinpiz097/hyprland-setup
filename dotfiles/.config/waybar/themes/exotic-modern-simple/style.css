@@ -31,7 +31,7 @@
 }
 
 window#waybar {
-    /*background-color: transparent;*/
+    background-color: transparent;
     background-color: @waybarcolor;
     border-bottom: 0px solid #ffffff;
     transition-property: background-color;
@@ -476,7 +476,10 @@ window#waybar.empty #window {
     color: @spotifycolor;
     opacity: 1.0;
     border-radius: 50px;
-    transition: all 0.3s linear;
+}
+
+.custom-spotify span {
+	transition: all 0.3s linear;
 }
 
 #pulseaudio-slider slider {
@@ -498,3 +501,39 @@ window#waybar.empty #window {
     border-radius: 5px;
     background-color: green;
 }
+
+#custom-cava_mviz {
+	color: @spotifybackground;
+	padding: 0px 20px 0px 20px;
+	margin: 0px 20px 0px 20px;
+}
+
+#custom-playerctl {
+	padding: 0px 20px 0px 20px;
+    margin: 0px 0px 0px 0px;
+    background-color: @spotifybackground;
+    font-size: 18px;
+    color: @spotifycolor;
+    opacity: 1.0;
+    border-radius: 50px;
+}
+
+#mpris {
+	padding: 0px 20px 0px 20px;
+    margin: 0px 0px 0px 0px;
+    background-color: @spotifybackground;
+    font-size: 16px;
+    color: @spotifycolor;
+    opacity: 1.0;
+    border-radius: 50px;
+  
+}
+
+#mpris status {
+	animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+

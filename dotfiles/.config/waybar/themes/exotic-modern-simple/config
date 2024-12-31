@@ -36,15 +36,19 @@
 
     // Modules Center
     "modules-center": [
-        "custom/spotify"
+        //"custom/spotify",
+		//"cava"
+		//"custom/cava_mviz"
+		//"custom/playerctl"
+		"mpris"
     ],
 
     // Modules Right
     "modules-right": [
         //"custom/updates",
-        "group/hardware",
-        "group/tools",
         "tray",
+        "group/hardware",
+        //"group/tools",
         "pulseaudio",
         //"pulseaudio/slider",
         //"backlight",
