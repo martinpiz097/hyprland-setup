@@ -112,5 +112,5 @@ cp $squarewallpaper $generatedversions/square-$wallpaperfilename.png
 # -----------------------------------------------------
 
 ags quit &
-sleep 0.2
+sleep 0.3
 ags run &

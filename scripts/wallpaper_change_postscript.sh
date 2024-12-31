@@ -16,12 +16,12 @@ rm $CURRENT_WALLPAPER_PATH || true
 
 echo "Cargando nueva info de wallpaper..."
 touch $CURRENT_WALLPAPER_PATH || true
-echo "$LAST_WALLPAPER" >> $CURRENT_WALLPAPER_PATH
+echo "$LAST_WALLPAPER" > $CURRENT_WALLPAPER_PATH
 sed -i "s|~|$HOME|g" "$CURRENT_WALLPAPER_PATH"
 
 echo "Modificando color scheme..."
-wal -q -i $(cat $CURRENT_WALLPAPER_PATH)
 source "$HOME/.cache/wal/colors.sh"
+wal -q -i $(cat $CURRENT_WALLPAPER_PATH) &
 
 echo "Cargando blur wallpaper..."
 sh $SCRIPT_PARENT_FOLDER/generate_blur_wallpaper.sh
