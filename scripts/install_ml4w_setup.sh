@@ -6,4 +6,5 @@ bash <(curl -s https://raw.githubusercontent.com/mylinuxforwork/dotfiles/main/se
 echo "Configurando plugins..."
 hyprpm update
 hyprpm add https://github.com/hyprwm/hyprland-plugins
-hyprpm enable hyprexpo
+hyprpm update
+#hyprpm enable hyprexpo
