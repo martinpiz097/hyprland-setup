@@ -7,7 +7,7 @@
 
 @define-color backgroundcolor @waybarcolor;
 @define-color bordercolor @waybarcolor;
-@define-color textcolor #2C2C2C;
+@define-color textcolor #3C3B37;
 @define-color iconcolor @textcolor;
 
 
@@ -18,9 +18,9 @@
 @import '../style.css';
  
 #custom-ml4w-welcome {
-    background-image: url("../../assets/ml4w-icon-black.svg");
+    background-image: url("../../assets/ml4w-icon-mate-grey.svg");
 }
 
 #custom-chatgpt {
-    background-image: url("../../assets/openai-black.svg");
+    background-image: url("../../assets/openai-mate-grey.svg");
 }

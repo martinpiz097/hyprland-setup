@@ -3,12 +3,12 @@
  * ----------------------------------------------------- */
 @import '../../../../../.cache/wal/colors-waybar.css';
 
-@define-color waybarcolor #ffffff;
+@define-color waybarcolor #ECECED;
 
 @define-color backgroundcolor @waybarcolor;
 @define-color bordercolor @waybarcolor;
 /*@define-color textcolor #87a556;*/
-@define-color textcolor #87A556;
+@define-color textcolor #3C3B37;
 @define-color iconcolor @textcolor;
 
 
@@ -19,9 +19,9 @@
 @import '../style.css';
  
 #custom-ml4w-welcome {
-    background-image: url("../../assets/ml4w-icon-mate.svg");
+    background-image: url("../../assets/ml4w-icon-mate-grey.svg");
 }
 
 #custom-chatgpt {
-    background-image: url("../../assets/openai-mate.svg");
+    background-image: url("../../assets/openai-mate-grey.svg");
 }
