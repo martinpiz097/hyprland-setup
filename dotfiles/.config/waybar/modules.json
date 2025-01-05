@@ -317,8 +317,8 @@
   "battery": {
     "states": {
       // "good": 95,
-      "warning": 30,
-      "critical": 15
+      "warning": 15,
+      "critical": 8
     },
     "format": "{icon}",
     "format-charging": "",
