@@ -3,7 +3,7 @@
  * ----------------------------------------------------- */
 @import '../../../../../.cache/wal/colors-waybar.css';
 
-@define-color waybarcolor #000000;
+@define-color waybarcolor #2C2C2C;
 
 @define-color backgroundcolor @waybarcolor;
 @define-color bordercolor @waybarcolor;
