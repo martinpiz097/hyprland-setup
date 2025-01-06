@@ -1,0 +1,27 @@
+/* -----------------------------------------------------
+ * Import Pywal colors 
+ * ----------------------------------------------------- */
+@import '../../../../../.cache/wal/colors-waybar.css';
+
+@define-color waybarcolor #46453F;
+
+@define-color backgroundcolor @waybarcolor;
+@define-color bordercolor @waybarcolor;
+@define-color textcolor #E1DCD1;
+@define-color iconcolor @textcolor;
+
+
+/* @define-color spotifybackground #EE7744; */
+@define-color spotifybackground #CF5D2F;
+@define-color spotifycolor @textcolor;
+
+
+@import '../style.css';
+ 
+#custom-ml4w-welcome {
+    background-image: url("../../assets/ml4w-icon-mate-light-grey.svg");
+}
+
+#custom-chatgpt {
+    background-image: url("../../assets/openai-mate-light-grey.svg");
+}

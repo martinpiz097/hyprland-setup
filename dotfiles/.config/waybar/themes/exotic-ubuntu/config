@@ -1,0 +1,63 @@
+// __        __          _                 
+// \ \      / /_ _ _   _| |__   __ _ _ __  
+//  \ \ /\ / / _` | | | | '_ \ / _` | '__| 
+//   \ V  V / (_| | |_| | |_) | (_| | |    
+//    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    
+//                 |___/                   
+//  
+// by Stephan Raabe (2023) 
+// ----------------------------------------------------- 
+
+{
+    // General Settings
+    "layer": "bottom",
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 0,
+
+    // Load Modules
+    "include": [
+        //"~/.config/ml4w/settings/waybar-quicklinks.json",
+        "~/.config/waybar/modules.json"
+    ],
+
+    // Modules Left
+    "modules-left": [
+        "custom/appmenu",
+        "hyprland/workspaces",
+        "hyprland/window"
+        //"group/links",
+        //"wlr/taskbar",
+        //"group/quicklinks",
+        //"custom/empty"
+    ],
+
+    // Modules Center
+    "modules-center": [
+        //"custom/spotify",
+		//"cava"
+		//"custom/cava_mviz"
+		//"custom/playerctl"
+		"mpris"
+    ],
+
+    // Modules Right
+    "modules-right": [
+        //"custom/updates",
+        "tray",
+        "group/hardware",
+        //"group/tools",
+        "pulseaudio",
+        //"pulseaudio/slider",
+        //"backlight",
+        "bluetooth",
+        "battery",
+        "network",
+        "custom/ml4w-welcome",
+        "hyprland/language",   
+        "clock",    	
+        "custom/exit"
+    ]
+}
