@@ -3,25 +3,23 @@
  * ----------------------------------------------------- */
 @import '../../../../../.cache/wal/colors-waybar.css';
 
-@define-color waybarcolor #46453F;
+@define-color waybarcolor #000000;
 
 @define-color backgroundcolor @waybarcolor;
 @define-color bordercolor @waybarcolor;
-@define-color textcolor #CF5D2F;
+@define-color textcolor #ECECED;
 @define-color iconcolor @textcolor;
 
 
-/* @define-color spotifybackground #EE7744; */
-@define-color spotifybackground @textcolor;
-@define-color spotifycolor #E1DCD1;
-
+@define-color spotifybackground #CF5D2F;
+@define-color spotifycolor @waybarcolor;
 
 @import '../style.css';
  
 #custom-ml4w-welcome {
-    background-image: url("../../assets/ml4w-icon-mate-light-grey.svg");
+    background-image: url("../../assets/ml4w-icon-white.svg");
 }
 
 #custom-chatgpt {
-    background-image: url("../../assets/openai-mate-light-grey.svg");
+    background-image: url("../../assets/openai-mate-white.svg");
 }
