@@ -5,12 +5,12 @@
 //    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    
 //                 |___/                   
 //  
-// by Stephan Raabe (2023) 
+// by Martin Pizarro 
 // ----------------------------------------------------- 
 
 {
     // General Settings
-    "layer": "top",
+    "layer": "bottom",
     "margin-top": 0,
     "margin-bottom": 0,
     "margin-left": 0,
