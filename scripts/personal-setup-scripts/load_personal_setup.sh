@@ -19,7 +19,7 @@ create_symlink() {
 
     if [ ! -L "$target_path" ]; then
         echo "Creating symlink: $source_path -> $target_path"
-#        ln -s "$source_path" "$target_path"
+        ln -s "$source_path" "$target_path"
     else
         echo "Symlink already exists: $source_path -> $target_path"
     fi
@@ -85,4 +85,4 @@ fi
 echo "Symlinks created successfully."
 
 echo "Modificando comportamiento del botón de apagado, favor reiniciar logind"
-#sudo sed -i 's/#HandlePowerKey.*/HandlePowerKey=ignore/' /etc/pacman.conf
+sudo sed -i 's/#HandlePowerKey.*/HandlePowerKey=ignore/' /etc/pacman.conf

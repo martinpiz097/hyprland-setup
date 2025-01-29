@@ -7,47 +7,34 @@ CONFIG_PATH=$HOME/.config
 ML4W_DOTFILES_PATH=$HOME/dotfiles
 
 remove_symlink_if_linked_from() {
-	local source_base_path=$1
-    local target_path=$2
+    local target_path=$1
+    local source_base_path=$2
 
-	# si target_path tiene link quiere decir que el souece_base_path debe ser el conjunto de carpetas padre de linked_path
     if [ -L "$target_path" ]; then
         local linked_path=$(readlink "$target_path")
-        #echo "$linked_path ----> $target_path"
         if [[ "$linked_path" == "$source_base_path"* ]]; then
-			echo "source_base_path=$source_base_path"
-			echo "target_path=$target_path"
-			echo "linked_path=$linked_path"
-            #echo "Removing symlink: $target_path (linked from $linked_path)"
-            #unlink "$target_path"
+            echo "Removing symlink: $target_path (linked from $linked_path)"
+            unlink "$target_path"
         fi
-     elif [   ]
-   		
-        
-   	fi
-    echo "==========================================================================================================================="
-
+    fi
 }
 
 remove_symlinks() {
-	local source_base=$1
-    local -n targets=$2
+    local -n targets=$1
+    local source_base=$2
 
     for target in "${targets[@]}"; do
-        remove_symlink_if_linked_from "$source_base" "$target"
+        remove_symlink_if_linked_from "$target" "$source_base"
     done
 }
-
-########################################################################
-
 
 if [ -d "$CONFIG_PATH" ]; then
     config_targets=()
     for item in "$CONFIG_PATH"/*; do
         config_targets+=("$item")
     done
-    remove_symlinks "$ML4W_DOTFILES_PATH/.config" config_targets
-    remove_symlink_if_linked_from "$ML4W_DOTFILES_PATH" "$CONFIG_PATH/ml4w-hyprland-settings"
+    remove_symlinks config_targets "$ML4W_DOTFILES_PATH/.config"
+    remove_symlink_if_linked_from "$CONFIG_PATH/ml4w-hyprland-settings" "$ML4W_DOTFILES_PATH"
 else
     echo "$CONFIG_PATH does not exist. Skipping."
 fi
@@ -58,9 +45,9 @@ files_to_remove=(
     "$HOME/.Xresources"
     "$HOME/.zshrc"
 )
-remove_symlinks "" files_to_remove
+remove_symlinks files_to_remove ""
 
-#rm -r $ML4W_DOTFILES_PATH
-#mkdir $ML4W_DOTFILES_PATH
+rm -r $ML4W_DOTFILES_PATH
+mkdir $ML4W_DOTFILES_PATH
 
 echo "Cleanup completed."
