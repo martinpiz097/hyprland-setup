@@ -1,1 +1,1 @@
-/ubuntu;/ubuntu/ubuntu-mate-blur
+/ubuntu;/ubuntu/mate-blur
