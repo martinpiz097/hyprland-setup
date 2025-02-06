@@ -1,1 +1,1 @@
-/exotic-ubuntu;/exotic-ubuntu/ubuntu-unity-blur
+/exotic-ubuntu;/exotic-ubuntu/ubuntu-mate-blur
