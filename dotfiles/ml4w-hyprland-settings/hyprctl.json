@@ -1,11 +1,11 @@
 [
     {
         "key": "general:gaps_in",
-        "value": 20
+        "value": 15
     },
     {
         "key": "general:gaps_out",
-        "value": 35
+        "value": 25
     },
     {
         "key": "general:extend_border_grab_area",
@@ -117,7 +117,7 @@
     },
     {
         "key": "decoration:shadow:range",
-        "value": 35
+        "value": 40
     },
     {
         "key": "decoration:shadow:render_power",
