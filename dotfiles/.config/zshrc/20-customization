@@ -6,7 +6,7 @@ POSH=agnoster
 # -----------------------------------------------------
 # oh-myzsh themes: https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # -----------------------------------------------------
-# ZSH_THEME=robbyrussell
+# ZSH_THEME=powerline
 
 # -----------------------------------------------------
 # oh-myzsh plugins
@@ -25,7 +25,7 @@ plugins=(
 )
 
 # Set-up oh-my-zsh
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # -----------------------------------------------------
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)

@@ -1,8 +1,8 @@
 [General]
 
 # Set to your screen resolution for better results
-width=1280
-height=720
+width=1680
+height=1050
 
 backgroundColour="black"
 
