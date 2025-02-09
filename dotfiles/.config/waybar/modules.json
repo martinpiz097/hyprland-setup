@@ -454,7 +454,7 @@
   	"format-paused": "{status_icon} <i>{dynamic}</i>",
   	"dynamic-order": ["artist", "title"],
 	"dynamic-separator": " - ",
-	"max-length": 55,
+	"max-length": 40,
   	"interval": 0,
   	"player-icons": {
   		"default": "▶",
