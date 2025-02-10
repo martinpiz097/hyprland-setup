@@ -1,1 +1,1 @@
-/ubuntu;/ubuntu/unity-blur
+/ubuntu;/ubuntu/unity-dark
