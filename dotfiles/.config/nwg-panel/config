@@ -92,7 +92,10 @@
     },
     "tray": {
       "root-css-name": "tray",
-      "inner-css-name": "inner-tray"
+      "inner-css-name": "inner-tray",
+      "icon-size": 16,
+      "smooth-scrolling-threshold": 0,
+      "new-left": true
     },
     "sway-taskbar": {
       "workspace-menu": [
