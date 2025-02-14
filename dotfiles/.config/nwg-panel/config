@@ -372,7 +372,7 @@
     "padding-vertical": 0,
     "spacing": 15,
     "icons": "light",
-    "css-name": "panel-top",
+    "css-name": "panel-bottom",
     "modules-left": [
       "playerctl"
     ],

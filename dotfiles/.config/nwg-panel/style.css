@@ -24,19 +24,21 @@ button {
 /* Sample button in sample config w/ no background nor border */
 #button-custom {
     background: rgba (0, 0, 0, 0.0);
-    border: 0
+    border: 0;
 }
 
 /* Top panel in sample config uses this name */
 #panel-top {
     background: #101010;
-    color: #eeeeee
+    color: #eeeeee;
+    height: 20px;
 }
 
 /* Bottom panel in sample config uses this name */
 #panel-bottom {
     background: #101010;
-    color: #eeeeee
+    color: #eeeeee;
+	height: 20px;
 }
 
 /* Controls window in sample config uses this name */
