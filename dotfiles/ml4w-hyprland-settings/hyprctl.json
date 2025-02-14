@@ -73,15 +73,15 @@
     },
     {
         "key": "decoration:blur:brightness",
-        "value": 0.6
+        "value": 1.0
     },
     {
         "key": "decoration:blur:size",
-        "value": 10
+        "value": 40
     },
     {
         "key": "decoration:blur:passes",
-        "value": 2
+        "value": 3
     },
     {
         "key": "decoration:blur:vibrancy",
@@ -93,11 +93,11 @@
     },
     {
         "key": "decoration:blur:noise",
-        "value": 0.1
+        "value": 0.2
     },
     {
         "key": "decoration:blur:contrast",
-        "value": 0.8
+        "value": 1.0
     },
     {
         "key": "decoration:blur:vibrancy_darkness",
@@ -126,5 +126,9 @@
     {
         "key": "general:hover_icon_on_border",
         "value": true
+    },
+    {
+        "key": "decoration:blur:ignore_opacity",
+        "value": false
     }
 ]
