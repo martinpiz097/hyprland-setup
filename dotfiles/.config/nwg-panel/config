@@ -334,6 +334,25 @@
       "icon-size": 16,
       "interval": 1,
       "always-show-icon": true
+    },
+    "menu-start-settings": {
+      "cmd-lock": "hyprlock",
+      "cmd-logout": "wlogout",
+      "cmd-restart": "systemctl reboot",
+      "cmd-shutdown": "systemctl -i poweroff",
+      "autohide": true,
+      "file-manager": "nemo",
+      "icon-size-large": 32,
+      "icon-size-small": 16,
+      "icon-size-button": 16,
+      "margin-bottom": 0,
+      "margin-left": 0,
+      "margin-right": 0,
+      "margin-top": 0,
+      "padding": 2,
+      "terminal": "kitty",
+      "run-through-compositor": true,
+      "hover-opens-submenu": false
     }
   },
   {

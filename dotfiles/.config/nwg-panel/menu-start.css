@@ -1,5 +1,6 @@
 window {
-    background-color: rgba (36, 47, 79, 0.92);
+    /* background-color: rgba (36, 47, 79, 0.92); */
+    background-color: #212121;
     color: #eeeeee
 }
 
@@ -18,5 +19,5 @@ button {
 }
 
 button:hover {
-    background-color: rgba (255, 255, 255, 0.1)
+    background-color: #757575
 }
