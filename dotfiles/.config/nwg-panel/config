@@ -320,6 +320,20 @@
       "css-name": "",
       "root-css-name": "",
       "icon-placement": "left"
+    },
+    "swaync": {
+      "tooltip-text": "Notifications",
+      "on-left-click": "swaync-client -t",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "root-executor",
+      "css-name": "executor",
+      "icon-placement": "left",
+      "icon-size": 16,
+      "interval": 1,
+      "always-show-icon": true
     }
   },
   {
@@ -656,12 +670,15 @@
       "icon-size": 16,
       "show-icon": true,
       "tooltip-text": "",
-      "on-left-click": "",
+      "on-left-click": "gnome-weather",
       "on-middle-click": "",
       "on-scroll-up": "",
       "on-scroll-down": "",
       "root-css-name": "",
-      "icon-placement": "left"
+      "icon-placement": "left",
+      "angle": 0.0,
+      "sigrt": 34,
+      "use-sigrt": false
     }
   }
 ]
