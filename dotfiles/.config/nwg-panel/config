@@ -23,6 +23,7 @@
       "clock"
     ],
     "modules-right": [
+      "executor-nm-applet",
       "keyboard-layout",
       "tray"
     ],
@@ -356,6 +357,23 @@
       "terminal": "kitty",
       "run-through-compositor": true,
       "hover-opens-submenu": false
+    },
+    "executor-nm-applet": {
+      "script": "nm-applet",
+      "tooltip-text": "Network",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "",
+      "css-name": "",
+      "icon-placement": "right",
+      "icon-size": 8,
+      "interval": 0,
+      "angle": 0.0,
+      "sigrt": 34,
+      "use-sigrt": false
     }
   },
   {
@@ -384,6 +402,7 @@
       "executor-cpuav",
       "executor-memory",
       "executor-drives",
+      "executor-network",
       "executor-temp",
       "executor-weather"
     ],
@@ -630,7 +649,7 @@
     "random-wallpaper": {},
     "executor-cpuav": {
       "script": "gopsuinfo -i a",
-      "interval": 2,
+      "interval": 3,
       "tooltip-text": "CPU average load",
       "on-left-click": "sh ~/.config/ml4w/settings/system-monitor.sh",
       "on-middle-click": "",
@@ -664,7 +683,7 @@
     },
     "executor-memory": {
       "script": "gopsuinfo -i m",
-      "interval": 5,
+      "interval": 3,
       "tooltip-text": "",
       "on-left-click": "sh ~/.config/ml4w/settings/system-monitor.sh",
       "on-middle-click": "",
@@ -741,6 +760,23 @@
       "icon-size": 16,
       "icon-placement": "left",
       "root-css-name": "",
+      "angle": 0.0,
+      "sigrt": 34,
+      "use-sigrt": false
+    },
+    "executor-network": {
+      "script": "sh /home/martin/hyprland-setup/scripts/nwg-panel/show-active-iface-info.sh",
+      "tooltip-text": "Show active network IP",
+      "on-left-click": "sh ~/.config/ml4w/settings/networkmanager.sh",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "",
+      "css-name": "",
+      "icon-placement": "left",
+      "icon-size": 8,
+      "interval": 3,
       "angle": 0.0,
       "sigrt": 34,
       "use-sigrt": false
