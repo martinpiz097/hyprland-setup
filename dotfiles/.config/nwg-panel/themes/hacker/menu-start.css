@@ -1,0 +1,24 @@
+window {
+    background-color: #000000;
+    color: #1DB954;
+}
+
+list {
+    background: none;
+    color: #1DB954;
+    border-radius: 15px
+}
+
+entry {
+    background-color: rgba (0, 0, 0, 0.2);
+    color: #1DB954;
+}
+
+button {
+    background: none;
+    border: none
+}
+
+button:hover {
+    background-color: #757575
+}
