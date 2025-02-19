@@ -31,14 +31,12 @@ button {
 #panel-top {
     background: #101010;
     color: #eeeeee;
-    height: 20px;
 }
 
 /* Bottom panel in sample config uses this name */
 #panel-bottom {
     background: #101010;
     color: #eeeeee;
-	height: 20px;
 }
 
 /* Controls window in sample config uses this name */
