@@ -31,12 +31,14 @@ button {
 #panel-top {
     background: #101010;
     color: #eeeeee;
+	font-size: 14.5px;
 }
 
 /* Bottom panel in sample config uses this name */
 #panel-bottom {
     background: #101010;
     color: #eeeeee;
+	font-size: 14.5px;
 }
 
 /* Controls window in sample config uses this name */
@@ -61,18 +63,15 @@ button {
 
 /* Executors usually behave better in monospace fonts */
 #executor-label {
-    font-family: monospace
 }
 
 /* and so does the Clock */
 #clock {
-    font-family: monospace;
-    font-size: 16px
 }
 
 /* Sample executor-weather uses "css-name": "weather" */
 #weather {
-    font-size: 16px
+    margin-right: 10px;
 }
 
 /* dwl-tags module */
@@ -82,7 +81,6 @@ button {
 }
 
 #dwl-tag-occupied {
-	font-family: monospace;
 	color: #eee;
     background-color: #006699;
     padding-left: 3px;
@@ -90,7 +88,6 @@ button {
 }
 
 #dwl-tag-free {
-	font-family: monospace;
 	color: #eee;
     background-color: rgba (32, 50, 90, 1.0);
     padding-left: 3px;
@@ -98,7 +95,6 @@ button {
 }
 
 #dwl-tag-urgent {
-	font-family: monospace;
 	color: #eee;
     background-color: #ee6600;
     padding-left: 3px;
@@ -108,4 +104,10 @@ button {
 #dwl-tag-selected {
 	border: solid 2px;
 	border-color: #81a1c1
+}
+
+#tray {
+}
+
+#inner-tray {
 }

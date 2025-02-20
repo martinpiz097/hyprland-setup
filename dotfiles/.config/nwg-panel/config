@@ -391,7 +391,7 @@
     "margin-bottom": 0,
     "padding-horizontal": 0,
     "padding-vertical": 0,
-    "spacing": 15,
+    "spacing": 20,
     "icons": "light",
     "css-name": "panel-bottom",
     "modules-left": [
