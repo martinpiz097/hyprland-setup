@@ -29,14 +29,14 @@ button {
 
 /* Top panel in sample config uses this name */
 #panel-top {
-    background: #101010;
+    background: rgba(0, 0, 0, 0.5);
     color: #eeeeee;
 	font-size: 14.5px;
 }
 
 /* Bottom panel in sample config uses this name */
 #panel-bottom {
-    background: #101010;
+    background: rgba(0, 0, 0, 0.5);
     color: #eeeeee;
 	font-size: 14.5px;
 }
@@ -110,4 +110,12 @@ button {
 }
 
 #inner-tray {
+}
+
+#player-buttons {
+        
+}
+
+#player-label {
+
 }
